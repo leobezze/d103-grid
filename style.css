@@ -1,0 +1,74 @@
+body{
+	display: grid;
+	grid-template-areas:  'navbar navbar navbar navbar'
+	'header header header header'
+	'section section section aside'
+	'footer footer footer footer';
+	grid-template-rows: 10vh 70vh 60vh 15vh;
+	grid-template-columns: 25vw 25vw 20vw 30vw;
+	/*grid-gap: 1vh;*/
+	margin: 0;
+}
+body::-webkit-scrollbar{
+	width: 0px;
+	background: transparent;
+}
+
+nav{
+	grid-area: navbar;
+	background-color: #8C2034;
+	color: #fff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+}
+nav div img{
+	width: 40px;
+	margin-left: 20px;
+
+}
+
+nav div:nth-child(2){
+	display: flex;
+	justify-content: space-evenly;
+	width: 50%;
+
+}
+
+a{
+	color: #fff;
+	font-size: 22px;
+	text-decoration: none;
+}
+
+header{
+	background-image: url("images/vingadores.png");
+	grid-area: header;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+section{
+	grid-area: section;
+	background-color: #030526;
+}
+section h2{
+	color: #fff;
+}
+section p{
+	color:#fff;
+}
+
+aside{
+	grid-area: aside;
+	background-color: #8889D5;
+}
+aside img{
+	width: 130px;
+}
+
+footer{
+	grid-area: footer;
+	background-color: magenta;
+}
